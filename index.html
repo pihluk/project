@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>HI</h1>
+    <p class="price price-primary">
+        <a data-bind="attr: {href: position.shop ? position.shop.html_url : ''}">
+            <span data-bind="html: position.format.priceObject(position.data.position_price.converted['BYN'])">0</span>
+            <small>р.</small>
+        </a>
+    </p>
+
 
 <script src="script.js"></script>
 </body>
